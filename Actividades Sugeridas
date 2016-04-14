@@ -1,0 +1,30 @@
+Actividades sugeridas
+
+Basado en lo que se vio en las clases de semana 3 y 4, se sugieren los siguientes ejercicios. Esta actividad NO es parte de la evaluación.
+
+1.- Escriba un programa que dado un arreglo de números calcule la suma de los números que sean pares en ese arreglo.
+
+Fíjese en los programas sumapares_ineficiente.s, minimo.s y division.s de la carpeta "Programas de Ejemplo". Puede utilizar esto como base:
+
+	.data
+arreglo:	.word 32, 59, 18, 52, 68, 15, 6, 30, 29, 17
+total:		.word 0
+mensaje:	.asciiz "La suma de los numeros pares del arreglo es:"
+
+	.text
+main:	#Codigo aqui
+
+2.- Escriba un programa que dado un arreglo definido en memoria, le pida al usuario un número y escriba en un nuevo arreglo el resultado de sumar cada elemento del arreglo con el número que dio el usuario. Imprima el segundo arreglo en pantalla.
+
+Fíjese en los programas sumapares_ineficiente.s, minimo.s para el manejo de arreglos y en division.s para el manejo de la entrada de la carpeta "Programas de Ejemplo". Puede utilizar esto como base:
+
+	.data
+arreglo_fuente:		.word 32, 59, 18, 52, 68, 15, 6, 30, 29, 17
+arreglo_destino:	.space 40	#Esto es un arreglo de 10 posiciones vacio.
+sumando:			.word		#Almacene aqui el numero que leyo de pantalla.
+mensaje:	.asciiz "El arreglo resultante es:"
+
+	.text
+main:	#Codigo aqui
+
+3.- Lea el programa sumaprimos.s. El programa no tiene documentación a propósito, la idea es que lea detenidamente el código y comprenda como realiza el cálculo de los números primos y la suma.
